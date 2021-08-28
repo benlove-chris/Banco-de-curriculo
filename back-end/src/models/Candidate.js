@@ -8,7 +8,7 @@ const CandidateSchema = new mongoose.Schema({
     profissao: { type: String, unique: false, required: true},      
     dataNascimento: { type: String, unique: false, required: true},
     estadoCivil: { type: String, unique: false, required: false},
-    sexo: { type: String, unique: false, required: false},
+    genero: { type: String, unique: false, required: false},
     cepCandidato: { type: String, unique: false, required: true},   
     logradouro: { type: String, unique: false, required: true},   
     numero: { type: Number, unique: false, required: true},   

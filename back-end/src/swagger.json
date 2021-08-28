@@ -39,7 +39,7 @@
                                     "estadoCivil": {
                                         "type": "string"
                                     },
-                                    "sexo": {
+                                    "genero": {
                                         "type": "string"
                                     
                                     },
@@ -97,7 +97,7 @@
                                         "profissao": "Densenvolvedor",
                                         "dataNascimento": "23/11/1996",
                                         "estadoCivil": "Solteiro",
-                                        "sexo": "Masculino",
+                                        "genero": "Masculino",
                                         "cepCandidato": "88330-345",
                                         "logradouro": "Rua 2950",
                                         "numero": 332,
