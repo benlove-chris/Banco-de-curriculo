@@ -1,0 +1,128 @@
+{
+    "openapi": "3.0.0",
+
+    "info": {
+        "title": "API do projeto",
+        "description": "Essa é a api do projeto",
+        "version": "0.0.1"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:5000",
+            "description": "ambiente de desenvolvimento"
+        }
+    ],
+
+    "paths": {
+        "/register": {
+            "post": {
+                "sumarry": "cadastro de candidato",
+                "description": "Rota de cadastro de usário, recebe: nome, genêro, email e cep",
+                "tags": ["candidato"],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "nome": {
+                                        "type": "string"
+                                    },
+                                    "cargoPretendido": {
+                                        "type": "string"
+                                    },
+                                    "profissao": {
+                                        "type": "string"
+                                    },
+                                    "dataNascimento": {
+                                        "type": "string"
+                                    },
+                                    "estadoCivil": {
+                                        "type": "string"
+                                    },
+                                    "sexo": {
+                                        "type": "string"
+                                    
+                                    },
+                                    "cepCandidato": {
+                                        "type": "string"
+                                    
+                                    },
+                                    "logradouro": {
+                                        "type": "string"
+                                    },
+                                    "numero": {
+                                        "type": "string"
+                                    },
+                                    "bairro": {
+                                        "type": "string"
+                                    },
+                                    "cidade": {
+                                        "type": "string"
+                                    },
+                                    "uf": {
+                                        "type": "string"
+                                    },
+                                    "telefone": {
+                                        "type": "string"
+                                    },
+                                    "celular": {
+                                        "type": "string"
+                                    },
+                                    "contato": {
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "identidade": {
+                                        "type": "string"
+                                    },
+                                    "cpfCandidato": {
+                                        "type": "string"
+                                    },
+                                    "possuiVeiculo": {
+                                        "type": "string"
+                                    },
+                                    "habilitacao": {
+                                        "type": "string"
+                                    }
+                                    
+                                }
+                            },
+                            "examples": {
+                                "Candidato: Pedro Santos": {
+                                    "value":{
+                                        "nome": "Pedro Santos",
+                                        "cargoPretendido": "Dev Junior",
+                                        "profissao": "Densenvolvedor",
+                                        "dataNascimento": "23/11/1996",
+                                        "estadoCivil": "Solteiro",
+                                        "sexo": "Masculino",
+                                        "cepCandidato": "88330-345",
+                                        "logradouro": "Rua 2950",
+                                        "numero": "332",
+                                        "bairro": "Centro",
+                                        "cidade": "Baleneário Camboriú",
+                                        "uf": "SC",
+                                        "telefone": "33233454",
+                                        "celular": "45983398344",
+                                        "contato": "45983398344",
+                                        "email": "pedro96@gmail.com",
+                                        "identidade": "29888234",
+                                        "cpfCandidato": "23933287634",
+                                        "possuiVeiculo": "Sim",
+                                        "habilitacao": "AB"
+                                    }
+                                }
+                            
+                            }
+                            
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
