@@ -51,7 +51,7 @@
                                         "type": "string"
                                     },
                                     "numero": {
-                                        "type": "string"
+                                        "type": "number"
                                     },
                                     "bairro": {
                                         "type": "string"
@@ -63,13 +63,13 @@
                                         "type": "string"
                                     },
                                     "telefone": {
-                                        "type": "string"
+                                        "type": "number"
                                     },
                                     "celular": {
-                                        "type": "string"
+                                        "type": "number"
                                     },
                                     "contato": {
-                                        "type": "string"
+                                        "type": "number"
                                     },
                                     "email": {
                                         "type": "string"
@@ -78,7 +78,7 @@
                                         "type": "string"
                                     },
                                     "cpfCandidato": {
-                                        "type": "string"
+                                        "type": "number"
                                     },
                                     "possuiVeiculo": {
                                         "type": "string"
@@ -100,16 +100,16 @@
                                         "sexo": "Masculino",
                                         "cepCandidato": "88330-345",
                                         "logradouro": "Rua 2950",
-                                        "numero": "332",
+                                        "numero": 332,
                                         "bairro": "Centro",
                                         "cidade": "Baleneário Camboriú",
                                         "uf": "SC",
-                                        "telefone": "33233454",
-                                        "celular": "45983398344",
-                                        "contato": "45983398344",
+                                        "telefone": 33233454,
+                                        "celular": 45983398344,
+                                        "contato": 45983398344,
                                         "email": "pedro96@gmail.com",
                                         "identidade": "29888234",
-                                        "cpfCandidato": "23933287634",
+                                        "cpfCandidato": 23933287634,
                                         "possuiVeiculo": "Sim",
                                         "habilitacao": "AB"
                                     }

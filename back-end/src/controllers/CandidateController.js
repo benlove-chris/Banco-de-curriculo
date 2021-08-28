@@ -18,14 +18,11 @@ module.exports = {
         newCandidate.dataNascimento = dataNascimento;
         newCandidate.estadoCivil = estadoCivil;
         newCandidate.sexo = sexo;
-
-        //endereço
         newCandidate.cepCandidato = cepCandidato;
         newCandidate.logradouro  = logradouro;
         newCandidate.numero   = numero;
         newCandidate.bairro = bairro;
         newCandidate.cidade = cidade;
-
         newCandidate.uf = uf;
         newCandidate.telefone = telefone;
         newCandidate.celular  = celular;
@@ -37,8 +34,6 @@ module.exports = {
         newCandidate.habilitacao  = habilitacao;
 
         
-
-        //
 
         newCandidate.save((err, savedCandidate) => {
             if (err) {
