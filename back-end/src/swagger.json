@@ -17,7 +17,7 @@
         "/register": {
             "post": {
                 "sumarry": "cadastro de candidato",
-                "description": "Rota de cadastro de usário, recebe: nome, genêro, email e cep",
+                "description": "Rota de cadastro de usário, recebe os dados do usuario, nome, cpf, endereço etc ...",
                 "tags": ["candidato"],
                 "requestBody": {
                     "content": {
