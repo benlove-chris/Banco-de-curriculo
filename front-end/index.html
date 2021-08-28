@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>titulo o o o </title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  
+ 
+ <!--MeusScript -->
+  <script type="text/javascript" src="js/cep.js"></script>
+  
+</head>
+<body>
+
+<!--form-->
+
+
+<!--Sobre -->
+<!--
+<div id="fundo">
+  <div id="imagem"></div> 
+  <div id="overlay"></div>  
+</div>-->
+
+<div id="conteudo" class="cohntainer">
+  <!--junção dos 2 -->
+
+<div id="fundo">
+  <div id="overlay">
+
+  <div id="conteudo-inicial" class="text-center ">
+    <br><br>
+    
+    <header>
+      <div class="row justify-content-between">
+        <div class="col-2">
+            LG
+        </div>    
+      </div>
+    </header> 
+
+    <h1 class="display-3 text-white font-weight-bold my-5">Uma nova oportunidade<br> Para crescer na carreira</h1>
+    <p id="texto">A empresa jobsnet é especialista em recrutamento e seleção de profissionais nas mais diveras áreas, ela se empenha no satisfação dos seus candidatos. Para garantir estar entre os selecionados preencha o formulário com seus dados.<br>
+    <a href="#form" class="btn my-4 font-weight-bold atlas-cta cta-green" id="vermais" >Preencher dados</a> </p>
+    
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<!--form-->
+<div id="form" >
+<div id="previa"> <h6>Formulario</h6> </div>
+
+<form class="mb-0">
+<h5 class="text-uppercase">Dados pessoais</h5>
+<hr>  
+
+  <div class="form-row " >
+    <div class="col-md-4 mb-3">
+      <label for="nome">Nome Completo</label>
+      <input type="text" class="form-control" id="nome"   required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="cargoPretendido">Cargo Pretendido</label>
+      <input type="text" class="form-control" id="cargoPretendido" >
+    </div>
+  </div>
+
+  
+
+  <div class="form-row"> 
+
+    <div class="col-md-4 mb-3">
+      <label for="profissao">Profissão</label>
+      <input type="text" class="form-control" id="profissao"  placeholder="Profissão"  required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="dataNascimento">Data de Nascimento</label>
+      <input type="date" class="form-control"  id="dataNascimento" required>
+    </div>
+
+  </div>
+
+  <div class="form-row">
+
+    <div class="col-md-3 mb-3">
+      <label for="estadocivil">Estado Civil</label>
+      <select class="form-control" id="estadoCivil">
+         <option value="none">Selecionar</option>
+        <option value="solteiro">Solteiro(a)</option>
+        <option value="casado">Casado(a)</option>
+        <option value="divorciado">Divorciado(a)</option>
+        <option value="viuvo">Viúvo(a)</option>
+      </select>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label for="genero">Genero</label>
+      <input type="text" class="form-control" id="genero">
+    </div>  
+  </div>
+
+
+
+
+  
+  
+
+<h5 class="text-uppercase">Endereço</h5>
+<hr>  
+  <div class="form-row">
+    <div class="col-md-2 mb-3">
+      <label for="cepCandidato">Cep</label>
+      <input type="text" class="form-control" id="cepCandidato" onblur="pesquisacep(this.value)" value="" required>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label for="logradouro">Logradouro</label>
+      <input type="text" class="form-control" id="logradouro" placeholder="Rua, Avenida..." required>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label for="numero">Numero</label>
+      <input type="text" class="form-control" id="logradouro" id="numero" required value="">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-3 mb-3">
+      <label for="bairro">Bairro</label>
+      <input type="text" class="form-control" required id="bairro">
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label for="cidade">Cidade</label>
+      <input type="text" class="form-control" required id="cidade">
+    </div>
+
+    <div class="col-md-2 mb-3">
+      <label for="telefone1">UF</label>
+      <input type="text" class="form-control" id="uf">
+    </div>
+</div>
+
+
+
+
+
+<div class="form-row">
+    
+
+    <div class="col-md-3 mb-3">
+      <label for="telefone">Telefone Fixo </label>
+      <input type="text" class="form-control" id="telefone">
+    </div>
+</div>
+
+
+<div class="form-row">
+
+  <div class="col-md-3 mb-3">
+      <label for="celular">Celular</label>
+      <input type="text" class="form-control" id="celular" required>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label for="contato">Contato</label>
+      <input type="text" class="form-control" id="contato">
+    </div>
+
+    <div class="col-md-4">
+      <label for="email">E-mail</label>
+      <input type="text" class="form-control" placeholder="myname@example.com" id="email" required>
+    </div>
+</div>
+
+<h5 class="text-uppercase">Documentos</h5>
+<hr>
+
+<div class="form-row">
+
+    <div class="col-md-3 mb-3">
+      <label for="identidade">Identidade</label>
+      <input type="text" class="form-control" id="identidade">
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label for="cpf">CPF</label>
+      <input type="tel" class="form-control" id="cpfCandidato" required>
+    </div>
+
+    <div class="col-md-2">
+      <label for="possuiVeiculo">Possui Veiculo</label>
+      <select class="form-control" id="possuiVeiculo">
+        <option value="none">Selecionar</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+    </div>
+
+    <div class="col-md-2">
+      <label for="habilitacao">Habilitação</label>
+      <select class="form-control" id="habilitacao">
+        <option value="none">Selecionar</option>
+        <option>A</option>
+        <option>B</option>
+        <option>AB</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+      </select>
+    </div>
+</div>
+
+
+
+
+<div class="form-row">
+<button class="btn btn-primary" type="submit" id="botao_cadastrar_candidato"  onclick="cadastrarCandidato()">Cadastrar</button>
+</div>
+
+</form>
+</div>
+
+<!--junção dos 2 -->
+</div>
+
+
+
+
+<!--form-->
+
+
+
+
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"crossorigin="anonymous">
+</script>
+
+
+
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" integrity="sha512-VZ6m0F78+yo3sbu48gElK4irv2dzPoep8oo9LEjxviigcnnnNvnTOJRSrIhuFk68FMLOpiNz+T77nNY89rnWDg==" crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!--<script type="text/javascript" src="js/meuScript.js"></script>-->
+<script src="js/axs.js"></script>
+<script src="js/Axios.js"></script>
+
+
+
+</body>
+</html>

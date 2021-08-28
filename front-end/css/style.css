@@ -1,0 +1,180 @@
+
+/*------------------------------------------*/
+body{
+    overflow-x: hidden;
+}
+.container{
+    
+}
+
+
+
+#overlay{
+    
+    width: 100%;
+    background-color: #001133;/*#001133*/
+    
+    opacity: 0.93;
+    
+}
+  /*#fundo{
+    height: 94%;
+    width: 100%;
+    position: absolute;
+    
+  }*/
+
+/*
+ background: black; 
+  opacity: 0.6;
+  border: 10px double transparent;
+  height: 80%;
+  width: 90%;
+ 
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-bottom: 0%;
+  border-radius: 50px;
+  position: absolute;*/
+
+  
+
+  #conteudo{
+    
+
+  }
+
+
+
+
+  #form{
+    margin-top: ;
+    color: black;
+    /*position: absolute;
+    background-color: #e6e6e6;
+     background-image: linear-gradient(180deg, #001133, white);*/
+    width: 90%;
+    border: 1px solid gray;
+    margin-left: 6%;
+    margin-bottom: 3%;
+  }
+  form{
+    margin-left: 5%;
+    margin-top: 10%;
+    
+  }
+  #texto{
+    margin-bottom: 16%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  #botao{
+    margin-bottom: 3%;
+    margin-top: 1%;
+    border-color: darkgrey;
+    background-color: gray;
+  }
+
+  header{
+   
+  }
+
+ 
+  #vermais{
+    color: white;
+    background-color: green;
+
+
+  }
+ 
+/*
+  @media only screen and (max-width: 600px) {
+
+    
+    #imagem{
+    
+    background-image: url(computer1.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: 30%;
+    }
+
+    #overlay{
+        height: 100%;
+        width: 100%;
+        background-color: #001133;
+        position: absolute;
+        opacity: 0.9;
+        
+    }
+    #fundo{
+        height: 94%;
+        width: 100%;
+        position: absolute;
+        
+    }
+    #conteudo-inicial{
+        color: black;
+        font-size: 20em;
+        margin-left: 12%;
+        background-color: red;
+    }
+
+
+
+
+}*/
+
+#fundo{
+    background-image: url(../img/computer1.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+#conteudo-inicial{
+    position: relative;
+    color: white;
+    text-align: justify;
+    margin-top: ;
+
+
+}
+
+
+#cabeca{
+margin-top: 5%;
+}
+
+#previa{
+    position: absolute;
+    height: 3%;
+    border-radius: 33px;
+    margin-right: 40%;
+    margin-left: 30%;
+    width: 30%;
+    text-align: center;
+    color: black;
+    background-color: gray;
+}
+/*
+#previa * {
+    background-color: red;
+    position: absolute;
+    text-align: center;
+}*/
+
+
+@media only screen and (max-width: 700px) {
+    #botao{
+        background-color: gray;
+        margin-top: 2%;
+        margin-left: 40%;
+        border-color: darkgrey;
+    }
+
+}
