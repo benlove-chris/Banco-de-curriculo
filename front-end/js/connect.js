@@ -1,106 +1,4 @@
-/*
-function cadastrar(){
-    console.log("AAAAAAAAAAAAAAAAAAAAAAAAAA");
-    const form = document.querySelector("form");
-    let data = new FormData(form);
-    console.log(data);
-    
-    const user =  axios.post('http://localhost:5000/register', form);
-    if (user.status === 200) {
-        alert('iti malia deu certo');
-      }else{
-        console.log("ERRRRRRRRO");
-        alert("Comunicação funcionando");
-      }
 
-    console.log("EEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
-
-}   
-
-
-
-function chamar(){
-    alert("ola");
-}
-
-
-
-window.addEventListener("load", () => {
-    
-    const form = document.querySelector("form");
-    console.log("Olá chris");
-    console.log(form);
-    console.log("TEste");
-    const data = new FormData(form);
-    console.log(data);
-
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        let data = new FormData(form);
-        console.log(data);
-
-        axios({
-            method: "post",
-            url: "/",
-            data: data,
-        })
-                .then((res) => {
-                    console.log(res);
-                })
-                .catch((err) => {
-                    throw err;
-                });
-    });
-});
-
-
-function criarr() {
-    // body...
-
-
-    const criar = async () => {
-        const form = document.querySelector("form");
-        const data = new FormData(form);
-        console.log("COnexao estavel");
-        console.log(form);
-        const user = await axios.post('http://localhost:5000/register', data);
-        console.log("COnexao estavel 2");
-        if (user.status === 200) {
-            alert('iti malia deu certo');
-          } else{
-            console.log("ERRRRRRRO");
-             }
-    }
-
-}
-
-
-*/
-
-
-/*
-
-async function criarrr(){
-
-    try {
-        const form = document.querySelector("form");
-        const data = new FormData(form);
-        console.log(data);
-        console.log(form);
-        console.log("Conexao estavel");
-        alert("Alerta");
-        const user = await axios.post('http://localhost:5000/register', data);
-        if (user.status === 200) {
-            alert("AAAAAAAAEEEEEEEEEEEEEE");
-        }else{
-            alert("Naoooooooooooooo");
-        }
-    } catch (error){
-        console.error(error);
-
-    }
-}
-*/
 
 const dadosFormulario = () => {
     
@@ -146,9 +44,9 @@ const dadosFormulario = () => {
         telefone: 33233454,
         celular: 45983398344,
         contato: 45983398344,
-        email: "pedro8@gmail.com",
+        email: "pedro80@gmail.com",
         identidade: "29888987",
-        cpfCandidato: 239332876745,
+        cpfCandidato: 39332876745,
         possuiVeiculo: "Sim",
         habilitacao: "AB" 
         
@@ -165,7 +63,7 @@ const dadosFormulario = () => {
 const cadastrarCandidato = async(candidato) => {
 
     try {
-        const user = fetch('http://localhost:5000/register', {
+        const candidato = fetch('http://localhost:5000/register', {
             method: "POST",
             headers: {
                 'Accept': 'application/json',
@@ -173,7 +71,7 @@ const cadastrarCandidato = async(candidato) => {
             },
             body: JSON.stringify(dadosFormulario())
         });
-        if (user.status === 200) {
+        if (candidato.status === 500) {
             alert("Deu certo ae");
         }
 

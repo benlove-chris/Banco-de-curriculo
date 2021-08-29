@@ -53,26 +53,27 @@ function cpfvalida(cpf){
 
 
 function validarCPF(){
-    document.getElementById('error').style.display = 'none';
-    document.getElementById('success').style.display = 'none';
+    
     
 
     var cpf = document.getElementById("cpfCandidato").value;
-    console.log(cpf);
+    
 
     var resultadoVal = cpfvalida(cpf);
 
-    if (resultadoVal){
-        document.getElementById('success').style.display = 'block';
-
-
-    }
-
-    else{
-        document.getElementById('error').style.display = 'block';
-
+    if (!resultadoVal) {
+        document.getElementById('erroCPF').style.display = 'block';
+        return false;
+    } else {
+        document.getElementById('erroCPF').style.display = 'none';
+ 
+        return true;
     }
 
 }
+
+
+
+
 
 
