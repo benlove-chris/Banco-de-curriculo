@@ -50,7 +50,7 @@
                                     "logradouro": {
                                         "type": "string"
                                     },
-                                    "numero": {
+                                    "numeroCasa": {
                                         "type": "number"
                                     },
                                     "bairro": {
@@ -100,7 +100,7 @@
                                         "genero": "Masculino",
                                         "cepCandidato": "88330-345",
                                         "logradouro": "Rua 2950",
-                                        "numero": 332,
+                                        "numeroCasa": 332,
                                         "bairro": "Centro",
                                         "cidade": "Baleneário Camboriú",
                                         "uf": "SC",

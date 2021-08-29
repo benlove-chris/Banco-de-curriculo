@@ -5,7 +5,7 @@ module.exports = {
 
         
         const { nome, cargoPretendido, profissao, dataNascimento,
-            estadoCivil, genero, cepCandidato, logradouro, numero, bairro,
+            estadoCivil, genero, cepCandidato, logradouro, numeroCasa, bairro,
             cidade, uf, telefone, celular, contato, email, identidade,
             cpfCandidato, possuiVeiculo, habilitacao} = req.body;
         
@@ -20,7 +20,7 @@ module.exports = {
         newCandidate.genero = genero;
         newCandidate.cepCandidato = cepCandidato;
         newCandidate.logradouro  = logradouro;
-        newCandidate.numero   = numero;
+        newCandidate.numeroCasa   = numeroCasa;
         newCandidate.bairro = bairro;
         newCandidate.cidade = cidade;
         newCandidate.uf = uf;
