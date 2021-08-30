@@ -2,6 +2,11 @@
 /*------------------------------------------*/
 body{
     overflow-x: hidden;
+    /*background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    
+
 }
 .container{
     
@@ -48,84 +53,79 @@ body{
 
 
   #form{
-    margin-top: ;
-    color: black;
-    /*position: absolute;
-    background-color: #e6e6e6;
-     background-image: linear-gradient(180deg, #001133, white);*/
-    width: 90%;
-    border: 1px solid gray;
-    margin-left: 6%;
-    margin-bottom: 3%;
-  }
-  form{
-    margin-left: 5%;
     margin-top: 10%;
+    padding-top: 0.3%;
+background: rgb(0,17,51);
+background: linear-gradient(0deg, rgba(0,17,51,1) 1%, rgba(179,204,255,1) 92%);
+    padding-bottom: 10%;
     
   }
+  form{
+    background: white;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-top: 10%;
+    text-align: justify;
+    border: 3px solid #001133;
+      padding: 5%;
+      border-radius: 25px;
+      
+      color: black;
+      /*box-shadow: 5px 5px 8px black, 10px 10px 8px #001133, 15px 15px 8px white;*/
+      
+    
+  }
+
+  hr{
+    margin-right: 15%;
+  }
+  form * {
+    margin-left: 10%;
+  }
+  
+  form input{
+    
+
+  }
+
+h5{
+
+}
+
+#head-text{
+    
+    margin-right: 10%;
+    
+
+}
+.title{
+    padding-bottom: 5%;
+}
+
+
+
   #texto{
     margin-bottom: 16%;
     margin-left: 25%;
     margin-right: 25%;
   }
-  #botao{
-    margin-bottom: 3%;
-    margin-top: 1%;
-    border-color: darkgrey;
-    background-color: gray;
-  }
+  
 
-  header{
-   
-  }
+
 
  
   #vermais{
-    color: white;
-    background-color: green;
+    color: #001133;
+    background-color: white;
+
 
 
   }
+  #cpfCandidato{
+    text-decoration: none;
+  }
  
-/*
-  @media only screen and (max-width: 600px) {
 
-    
-    #imagem{
-    
-    background-image: url(computer1.png);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-repeat: no-repeat;
-    margin-left: 30%;
-    }
-
-    #overlay{
-        height: 100%;
-        width: 100%;
-        background-color: #001133;
-        position: absolute;
-        opacity: 0.9;
-        
-    }
-    #fundo{
-        height: 94%;
-        width: 100%;
-        position: absolute;
-        
-    }
-    #conteudo-inicial{
-        color: black;
-        font-size: 20em;
-        margin-left: 12%;
-        background-color: red;
-    }
-
-
-
-
-}*/
 
 #fundo{
     background-image: url(../img/computer1.jpg);
@@ -161,30 +161,40 @@ margin-top: 5%;
     color: black;
     background-color: gray;
 }
-/*
-#previa * {
-    background-color: red;
-    position: absolute;
-    text-align: center;
-}*/
-
-
-@media only screen and (max-width: 700px) {
-    #botao{
-        background-color: gray;
-        margin-top: 2%;
-        margin-left: 40%;
-        border-color: darkgrey;
-    }
-
-}
 
 
 
-#cpfCandidato{
-    border-color: ;
-}
 
 #erroCPF{
     color: red;
 }
+
+
+#botao {
+    
+    
+    
+    background: linear-gradient(to left, white 50%, #90ee90 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    border-color: black;
+    background-color: white;
+    text-align: center;
+    color: black;
+    width: 55%;
+    border-color: #001133;
+    
+    
+}
+
+#botao:hover{
+    background-position: left bottom;
+}
+#botao{
+    
+  }
+ 

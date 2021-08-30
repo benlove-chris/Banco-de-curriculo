@@ -4,7 +4,7 @@ const dadosFormulario = () => {
     
 
     let dados = {   
-        /*
+        
 
         nome: document.getElementById('nome').value,
         cargoPretendido: document.getElementById('cargoPretendido').value,
@@ -27,28 +27,9 @@ const dadosFormulario = () => {
         possuiVeiculo: document.getElementById('possuiVeiculo').value,
         habilitacao: document.getElementById('habilitacao').value 
 
-        */
         
-        nome: "Pedro Santos",
-        cargoPretendido: "Dev Junior",
-        profissao: "Densenvolvedor",
-        dataNascimento: "23-11-1998",
-        estadoCivil: "Solteiro",
-        sexo: "Masculino",
-        cepCandidato: "88330-345",
-        logradouro: "Rua 2950",
-        numeroCasa: 332,
-        bairro: "Centro",
-        cidade: "Baleneário Camboriú",
-        uf: "SC",
-        telefone: 33233454,
-        celular: 45983398344,
-        contato: 45983398344,
-        email: "pedro80@gmail.com",
-        identidade: "29888987",
-        cpfCandidato: 39332876745,
-        possuiVeiculo: "Sim",
-        habilitacao: "AB" 
+        
+        
         
     };
 
@@ -60,34 +41,25 @@ const dadosFormulario = () => {
 
 
 
-const cadastrarCandidato = async(candidato) => {
+const cadastrarCandidato = async(candidate) => {
 
-    try {
-        const candidato = fetch('http://localhost:5000/register', {
-            method: "POST",
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(dadosFormulario())
-        });
-        if (candidato.status === 500) {
-            alert("Deu certo ae");
-        }
+    const candidato = await fetch('https://banco-backend-a.herokuapp.com/register', {
+        method: "POST",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(dadosFormulario())
+    });
+    if (candidato.status === 200) {
+        alert("Cadastro realizado com sucesso! ");
+    }else if(candidato.status === 500){
+        alert("Certifique se de que esses dados estaõ corretos ou não foram cadastrado.");
+    }
 
-    }catch (error) {
-            alert("Deu errrrrrrrrrrrrado");
-            console.log(dadosFormulario());
-            alert("Deu errrrrrrrrrrrrado");
-        }
 
 }
 
 
 
 
-
-function cliq(){
-    var numeroCasa = document.getElementById('numeroCasa');
-    console.log(numeroCasa);
-}

@@ -1,4 +1,4 @@
-console.log("Carregado");
+
 function cpfvalida(cpf){
     if (cpf.length != 11){
         return false
@@ -9,13 +9,11 @@ function cpfvalida(cpf){
         var numeros =cpf.substring(0,9);
         var digitos = cpf.substring(9);
 
-        //console.log(numeros);
-        //console.log(digitos);
         var soma = 0 
         for (var i = 10; i > 1; i--){
             soma += numeros.charAt(10 - i) * i;
         }
-        //console.log(soma);
+
 
         var resultado = (soma % 11) < 2 ? 0 : 11 - (soma % 11);
 
@@ -42,7 +40,6 @@ function cpfvalida(cpf){
         }
 
 
-        //console.log(digitos.toString().charAt(0) + "é a primeira posição da variavel soma")
         return true;
 
     }

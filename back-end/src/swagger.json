@@ -8,8 +8,8 @@
     },
     "servers": [
         {
-            "url": "http://localhost:5000",
-            "description": "ambiente de desenvolvimento"
+            "url": "https://banco-backend-a.herokuapp.com",
+            "description": "Server online"
         }
     ],
 
